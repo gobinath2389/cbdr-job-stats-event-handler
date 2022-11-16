@@ -1,0 +1,27 @@
+{
+  "name": "job-stats-event-handler",
+  "version": "1.0.0",
+  "description": "Handler that consumes SQS and update tbl_job_stats table in mando to capture job numbers",
+  "main": "index.js",
+  "scripts": {
+    "locally": "node -e \"console.log(require('./src/index').handler(require('./test/message.json')));\"",  
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "job-stats-event-handler"
+  },
+  "keywords": [
+    "mando",
+    "job",
+    "stats",
+    "cloudAtlas"
+  ],
+  "author": "ggopalsamy",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1241.0",
+    "dotenv": "^16.0.3",
+    "pg": "^8.8.0"
+  }
+}
